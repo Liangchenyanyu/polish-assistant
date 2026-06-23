@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+venv/
+env/
+
+# 环境变量（敏感信息）
+.env
+
+# 日志
+logs/*.log
+
+# 向量数据库（自动生成，较大）
+vector_db/
+
+# 输出数据
+data/*.md
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 配置文件备份
+config.json.bak
+
+# Node (前端)
+frontend/node_modules/
+frontend/dist/
+
+# 课程设计报告（非源码）
+../课程设计报告_*.md
+../课程设计报告_*.docx
+../文章润色助手_开发文档.md
+../rubric_extracted.txt
+../测试文章_*.md

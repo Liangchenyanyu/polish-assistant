@@ -1,0 +1,58 @@
+{
+    "_comment": "文章润色助手 配置文件 —— API Key 请通过程序界面输入（不保存到文件）",
+    "models": {
+        "deepseek": {
+            "name": "deepseek-chat",
+            "base_url": "https://api.deepseek.com/v1",
+            "display_name": "DeepSeek-V3 (推荐)"
+        },
+        "qwen": {
+            "name": "qwen-max",
+            "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+            "display_name": "Qwen-Max (备用)"
+        },
+        "doubao": {
+            "name": "doubao-seed-2-0-mini-260428",
+            "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+            "display_name": "Doubao (豆包)"
+        },
+        "custom": {
+            "name": "",
+            "base_url": "",
+            "display_name": "自定义兼容接口"
+        }
+    },
+    "default_model": "deepseek",
+    "default_params": {
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "max_tokens": 4096
+    },
+    "style_temperatures": {
+        "academic": 0.5,
+        "business": 0.6,
+        "media": 0.9,
+        "concise": 0.4,
+        "custom": 0.7
+    },
+    "api": {
+        "timeout": 60,
+        "max_retries": 3,
+        "retry_delay": 2
+    },
+    "rag": {
+        "chunk_size": 500,
+        "chunk_overlap": 50,
+        "top_k": 3,
+        "score_threshold": 0.3,
+        "embedding_model": "BAAI/bge-small-zh-v1.5",
+        "hf_mirror": "https://hf-mirror.com",
+        "kb_init_timeout": 30
+    },
+    "paths": {
+        "docs_dir": "docs",
+        "data_dir": "data",
+        "logs_dir": "logs",
+        "vector_db_dir": "vector_db"
+    }
+}
