@@ -31,10 +31,13 @@ config.json.bak
 # Node (前端)
 frontend/node_modules/
 frontend/dist/
+frontend/*.tsbuildinfo
 
-# 课程设计报告（非源码）
-../课程设计报告_*.md
-../课程设计报告_*.docx
-../文章润色助手_开发文档.md
-../rubric_extracted.txt
-../测试文章_*.md
+# PyInstaller 打包产物
+build/
+dist/
+*.spec
+polish_assistant.spec
+
+# 发布包
+../polish-assistant-release/
